@@ -54,7 +54,7 @@
               "count": 1.0,
               "exile_potion_id": "sharpen",
               "potion_action": "GIVE_STACKS",
-              "potion_dur": 240.0
+              "potion_dur": 600.0
             }
           }
         ],
