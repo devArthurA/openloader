@@ -244,7 +244,7 @@
   "effect_tip": "",
   "identifier": "summon_wisp_proc",
   "loc_name": "Proc Summon Wisp",
-  "lvl_based_on_spell": "",
+  "lvl_based_on_spell": "summon_wisp",
   "manual_tip": true,
   "max_lvl": 16,
   "min_lvl": 20,
