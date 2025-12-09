@@ -10,7 +10,7 @@
                 "count": 1.0,
                 "exile_potion_id": "blessed_aim",
                 "potion_action": "GIVE_STACKS",
-                "potion_dur": 6000.0
+                "potion_dur": 9999999.0
               }
             }
           ],
