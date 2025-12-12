@@ -15,6 +15,12 @@
       "max": 3.5,
       "min": 3,
       "stat": "summon_damage_per_health"
+    },
+    {
+      "type": "FLAT",
+      "max": -10.0,
+      "min": -30.0,
+      "stat": "int_dmg"
     }
   ],
   "style": "STR",

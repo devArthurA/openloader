@@ -203,7 +203,7 @@
     "id": "cast_finish"
   },
   "config": {
-    "aggro_radius": 10,
+    "aggro_radius": 20,
     "cast_time_ticks": 0,
     "castingWeapon": "MAGE_WEAPON",
     "charge_name": "",
@@ -252,8 +252,8 @@
   "statsForSkillGem": [
     {
       "type": "FLAT",
-      "max": 40.0,
-      "min": 40.0,
+      "max": 80.0,
+      "min": 5.0,
       "stat": "summon_duration"
     }
   ],
