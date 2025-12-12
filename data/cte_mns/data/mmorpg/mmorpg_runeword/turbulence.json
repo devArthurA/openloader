@@ -17,8 +17,8 @@
     },
     {
       "type": "FLAT",
-      "max": 20.0,
-      "min": 15.0,
+      "max": 25.0,
+      "min": 20.0,
       "stat": "proc_cyclone_when_hit"
     },
     {

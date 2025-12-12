@@ -6,27 +6,15 @@
   "stats": [
     {
       "type": "FLAT",
-      "max": 7,
-      "min": 6,
+      "max": 3.5,
+      "min": 3,
       "stat": "skill_damage_per_health"
     },
     {
       "type": "FLAT",
-      "max": 7,
-      "min": 6,
+      "max": 3.5,
+      "min": 3,
       "stat": "summon_damage_per_health"
-    },
-    {
-      "type": "FLAT",
-      "max": -10.0,
-      "min": -20.0,
-      "stat": "int_dmg"
-    },
-    {
-      "type": "FLAT",
-      "max": -20.0,
-      "min": -40.0,
-      "stat": "inc_leech"
     }
   ],
   "style": "STR",

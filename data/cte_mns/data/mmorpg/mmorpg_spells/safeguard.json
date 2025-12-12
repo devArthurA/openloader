@@ -1,6 +1,115 @@
 {
   "attached": {
-    "entity_components": {},
+    "entity_components": {
+      "stack_adder": [
+        {
+          "acts": [
+            {
+              "type": "exile_effect",
+              "map": {
+                "count": 1.0,
+                "exile_potion_id": "safeguard",
+                "potion_action": "GIVE_STACKS",
+                "potion_dur": 576000.0
+              }
+            }
+          ],
+          "en_preds": [],
+          "ifs": [
+            {
+              "type": "on_entity_expire",
+              "map": {}
+            }
+          ],
+          "targets": [
+            {
+              "type": "self",
+              "map": {}
+            }
+          ]
+        },
+        {
+          "acts": [
+            {
+              "type": "exile_effect",
+              "map": {
+                "count": 1.0,
+                "exile_potion_id": "safeguard_effect",
+                "potion_action": "GIVE_STACKS",
+                "potion_dur": 1.0
+              }
+            }
+          ],
+          "en_preds": [],
+          "ifs": [
+            {
+              "type": "on_entity_expire",
+              "map": {}
+            }
+          ],
+          "targets": [
+            {
+              "type": "self",
+              "map": {}
+            }
+          ]
+        }
+      ],
+      "stack_remover": [
+        {
+          "acts": [
+            {
+              "type": "exile_effect",
+              "map": {
+                "count": 1.0,
+                "exile_potion_id": "safeguard",
+                "potion_action": "REMOVE_STACKS",
+                "potion_dur": 20.0
+              }
+            }
+          ],
+          "en_preds": [],
+          "ifs": [
+            {
+              "type": "on_entity_expire",
+              "map": {}
+            }
+          ],
+          "targets": [
+            {
+              "type": "self",
+              "map": {}
+            }
+          ]
+        },
+        {
+          "acts": [
+            {
+              "type": "exile_effect",
+              "map": {
+                "count": 1000.0,
+                "exile_potion_id": "safeguard_effect",
+                "potion_action": "REMOVE_STACKS",
+                "potion_dur": 20.0
+              }
+            }
+          ],
+          "en_preds": [],
+          "ifs": [
+            {
+              "type": "on_entity_expire",
+              "map": {}
+            }
+          ],
+          "targets": [
+            {
+              "type": "self",
+              "map": {}
+            }
+          ]
+        }
+      ]
+    },
     "on_cast": [
       {
         "acts": [
@@ -46,12 +155,15 @@
       {
         "acts": [
           {
-            "type": "exile_effect",
+            "type": "projectile",
             "map": {
-              "count": 1.0,
-              "exile_potion_id": "safeguard",
-              "potion_action": "GIVE_STACKS",
-              "potion_dur": 9999999.0
+              "entity_name": "stack_adder",
+              "gravity": false,
+              "item": "minecraft:air",
+              "life_ticks": 1.0,
+              "proj_count": 1.0,
+              "proj_en": "mmorpg:spell_projectile",
+              "proj_speed": 0.0
             }
           }
         ],
@@ -60,6 +172,48 @@
           {
             "type": "on_spell_cast",
             "map": {}
+          },
+          {
+            "type": "caster_has_mns_effect",
+            "map": {
+              "exile_potion_id": "safeguard",
+              "is_false": true
+            }
+          }
+        ],
+        "targets": [
+          {
+            "type": "self",
+            "map": {}
+          }
+        ]
+      },
+      {
+        "acts": [
+          {
+            "type": "projectile",
+            "map": {
+              "entity_name": "stack_remover",
+              "gravity": false,
+              "item": "minecraft:air",
+              "life_ticks": 1.0,
+              "proj_count": 1.0,
+              "proj_en": "mmorpg:spell_projectile",
+              "proj_speed": 0.0
+            }
+          }
+        ],
+        "en_preds": [],
+        "ifs": [
+          {
+            "type": "on_spell_cast",
+            "map": {}
+          },
+          {
+            "type": "caster_has_mns_effect",
+            "map": {
+              "exile_potion_id": "safeguard"
+            }
           }
         ],
         "targets": [
@@ -82,7 +236,7 @@
     "charge_name": "",
     "charge_regen": 0,
     "charges": 0,
-    "cooldown_ticks": 400,
+    "cooldown_ticks": 40,
     "ene_cost": {
       "max": 7.0,
       "min": 5.0
@@ -99,9 +253,9 @@
     "swing_arm": false,
     "tags": {
       "tags": [
-	  "melee",
-	  "buff"
-	  ]
+        "melee",
+        "buff"
+      ]
     },
     "times_to_cast": 1,
     "tracking_radius": 5,

@@ -1,0 +1,41 @@
+{
+  "id": "butcher_oath",
+  "runes": [
+    "ven",
+    "yun",
+    "Nos",
+    "Ano",
+    "Sid"
+  ],
+  "slots": [
+    "hammer",
+    "gauntlet",
+    "Scythe"
+  ],
+  "stats": [
+    {
+      "type": "PERCENT",
+      "max": -100.0,
+      "min": -100.0,
+      "stat": "gear_weapon_damage"
+    },
+    {
+      "type": "FLAT",
+      "min": 100.0,
+      "max": 100.0,
+      "stat": "butcher_charge_when_hit"
+    },
+    {
+      "type": "FLAT",
+      "min": 0.5,
+      "max": 0.5,
+      "stat": "butcher_scaling_per_butcher_charge"
+    },
+    {
+      "type": "PERCENT",
+      "max": -70.0,
+      "min": -70.0,
+      "stat": "projectile_damage"
+    }
+  ]
+}

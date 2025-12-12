@@ -36,8 +36,8 @@
     },
     {
       "type": "FLAT",
-      "max": 10.0,
-      "min": 10.0,
+      "max": 15.0,
+      "min": 15.0,
       "stat": "proc_summon_wisp_when_hit"
     },
     {

@@ -1,0 +1,7 @@
+{
+  "effect": "butcher_charge",
+  "give_to": "Target",
+  "id": "give_butcher_charge_to_target",
+  "seconds": 1,
+  "ser": "give_exile_effect"
+}

@@ -1,0 +1,35 @@
+{
+  "data": {
+    "base": 0.0,
+    "core_stat_data": {
+      "stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "skill_damage_per_health",
+          "v1": 1.0
+        },
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "summon_damage_per_health",
+          "v1": 1.0
+        },
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "total_damage_per_perc_of_health",
+          "v1": 1.0
+        }
+      ]
+    },
+    "effect_id": "butcher_charge",
+    "ele": "Physical",
+    "id": "butcher_scaling_per_butcher_charge",
+    "max": 1.0E8,
+    "min": 0.0,
+    "perc": false,
+    "scale": "NONE"
+  },
+  "ser": "bonus_stat_per_effect"
+}

@@ -12,8 +12,8 @@
   "unique_stats": [
     {
       "type": "FLAT",
-      "max": 25.0,
-      "min": 25.0,
+      "max": 35.0,
+      "min": 30.0,
       "stat": "proc_turbo_when_hit"
     },
     {

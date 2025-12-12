@@ -1,0 +1,19 @@
+{
+  "type": "beneficial",
+  "id": "butcher_charge",
+  "max_stacks": 100,
+  "mc_stats": [],
+  "one_of_a_kind_id": "",
+  "spell_tags": {
+    "tags": []
+  },
+  "stacks_affect_stats": true,
+  "stats": [
+  ],
+  "tags": {
+    "tags": [
+      "charge",
+      "butcher"
+    ]
+  }
+}

@@ -12,8 +12,8 @@
   "unique_stats": [
     {
       "type": "FLAT",
-      "max": 20.0,
-      "min": 20.0,
+      "max": 40.0,
+      "min": 30.0,
       "stat": "proc_summon_wisp_when_hit"
     },
     {

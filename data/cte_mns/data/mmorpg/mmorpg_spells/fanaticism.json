@@ -10,7 +10,7 @@
                 "count": 1.0,
                 "exile_potion_id": "fanaticism",
                 "potion_action": "GIVE_STACKS",
-                "potion_dur": 9999999.0
+                "potion_dur": 576000.0
               }
             }
           ],
@@ -81,6 +81,32 @@
               "map": {}
             }
           ]
+        },
+        {
+          "acts": [
+            {
+              "type": "exile_effect",
+              "map": {
+                "count": 1000.0,
+                "exile_potion_id": "fanaticism_effect",
+                "potion_action": "REMOVE_STACKS",
+                "potion_dur": 20.0
+              }
+            }
+          ],
+          "en_preds": [],
+          "ifs": [
+            {
+              "type": "on_entity_expire",
+              "map": {}
+            }
+          ],
+          "targets": [
+            {
+              "type": "self",
+              "map": {}
+            }
+          ]
         }
       ]
     },
@@ -130,7 +156,7 @@
             "type": "caster_has_mns_effect",
             "map": {
               "exile_potion_id": "fanaticism",
-			  "is_false": true
+              "is_false": true
             }
           }
         ],
@@ -250,11 +276,11 @@
     "swing_arm": false,
     "tags": {
       "tags": [
-	  "magic",
-	  "aura",
-	  "area",
-	  "buff"
-	  ]
+        "magic",
+        "aura",
+        "area",
+        "buff"
+      ]
     },
     "times_to_cast": 1,
     "tracking_radius": 5,

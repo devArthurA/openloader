@@ -48,8 +48,8 @@
     },
     {
       "type": "FLAT",
-      "max": 15.0,
-      "min": 10.0,
+      "max": 20.0,
+      "min": 15.0,
       "stat": "wrath_when_hit"
     },
     {

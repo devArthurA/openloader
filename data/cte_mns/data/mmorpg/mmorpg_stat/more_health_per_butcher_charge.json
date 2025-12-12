@@ -1,0 +1,23 @@
+{
+  "data": {
+    "base": 0.0,
+    "core_stat_data": {
+      "stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 1.0
+        }
+      ]
+    },
+    "effect_id": "butcher_charge",
+    "ele": "Physical",
+    "id": "more_health_per_butcher_charge",
+    "max": 1000.0,
+    "min": 0.0,
+    "perc": false,
+    "scale": "NONE"
+  },
+  "ser": "bonus_stat_per_effect"
+}
